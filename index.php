@@ -32,7 +32,7 @@
                         </tr>
                         <tr>
                             <th>SubmitFile</th>
-                            <td><input type="submit" name="submit" class="btn btn-danger" value="upload"></td>
+                            <td><input type="submit" name="submit" class="btn btn-success" value="upload"></td>
                         </tr>
                 </table>
             </form>
@@ -53,7 +53,7 @@
                             $displayImg =$locations.$imageName;
                         echo "<img src='$displayImg' style='weight:150px;height:200px'>";
                         echo "<br>";
-                        echo "File Uploded...";
+                        echo "<span style='color:green; font-weight:bold;'>File Uploded...</span>";
                         echo floor($size/1024).".KB";
 
                 
@@ -61,7 +61,7 @@
                             echo "File Not Uploded...";
                         }
                     }else{
-                        echo "<span style='color:red'>Please Enter All Input Box Data...</span>";
+                        echo "<span style='color:red; font-weight:bold;'>Please Enter All Input Box Data...</span>";
                     }
             }
     
